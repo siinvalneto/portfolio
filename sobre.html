@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Portfólio Sinval Neto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .profile-image .profile-photo-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-image .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        
+        .profile-image .image-placeholder {
+            border: none;
+            padding: 0;
+            height: auto;
+            background: none;
+        }
+        
+        .philosophy-image .philosophy-photo-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .philosophy-image .philosophy-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        
+        .philosophy-image .image-placeholder {
+            border: none;
+            padding: 0;
+            height: auto;
+            background: none;
+        }
+        
+        .profile-image .spider-web-decoration,
+        .philosophy-image .spider-web-decoration {
+            z-index: 2;
+        }
+        
+    
+        .online-course {
+            color: #0066cc;
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo claro/escuro">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header class="spider-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <div class="spider-logo">
+                        <div class="spider-icon"></div>
+                        <span class="logo-text">Portfolio Sinval Neto</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="sobre.html" class="active"><i class="fas fa-user"></i> Sobre Mim</a></li>
+                    <li><a href="certificacoes.html"><i class="fas fa-certificate"></i> Certificações</a></li>
+                    <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-hero">
+            <div class="about-profile">
+                <div class="profile-image">
+                    <div class="profile-photo-container">
+                        <img src="/imagens/IMG_6116.jpg" alt="Foto de Sinval Neto" class="profile-photo">
+                    </div>
+                    <div class="spider-web-decoration profile-web"></div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="spider-title">
+                        <span class="spider-highlight">Sobre</span>
+                        <span class="typewriter">Sinval Neto</span>
+                    </h1>
+                    <p class="profile-tagline">Desenvolvedor Web & Entusiasta de Tecnologia</p>
+                    <div class="profile-contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Aracaju, Sergipe</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>netoart@outlook.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(85) 98118-6504</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 class="section-title">
+                <span class="title-text">Minha História</span>
+                <div class="spider-line"></div>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Minha jornada na tecnologia começou ainda no ensino médio, quando tive meu primeiro contato com programação. Desde então, desenvolvi uma paixão por criar soluções digitais e resolver problemas através do código. Minha formação começou com cursos online que me deram a base necessária para explorar o mundo do desenvolvimento web.
+                    </p>
+                    <p>
+                        Em 2021, concluí minha primeira imersão em programação, seguida por cursos especializados em Python. Paralelamente, investi no aprendizado de inglês, reconhecendo sua importância na área de tecnologia. Atualmente, estou aprofundando meus conhecimentos através do programa JovemTech da InovaSE, buscando me tornar um desenvolvedor júnior qualificado.
+                    </p>
+                    <div class="personal-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="quote-text">"O sucesso não é o destino, mas a jornada de aprendizado constante e superação de desafios."</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
+                        <ul>
+                            <li>
+                                <strong>Ensino Médio Completo</strong>
+                                <p>Colégio Omega - Aracaju/SE</p>
+                                <p>2019 - 2021 (Concluído)</p>
+                            </li>
+                            <li>
+                                <strong>Curso JovemTech Inovase - Desenvolvedor Júnior</strong>
+                                <p>Aracaju/SE</p>
+                                <p>2025 - Presente (Cursando)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3><i class="fas fa-certificate"></i> Cursos Complementares</h3>
+                        <ul>
+                            <li>
+                                <strong>Imersão Dev - Iniciativa à Programação</strong>
+                                <p>Alura - Online</p>
+                                <p>2021 (Concluído - 40 horas)</p>
+                                <span class="online-course">Curso realizado online na plataforma Alura</span>
+                            </li>
+                            <li>
+                                <strong>Imersão Python</strong>
+                                <p>Alura - Online</p>
+                                <p>2021 (Concluído - 44 horas)</p>
+                                <span class="online-course">Curso realizado online na plataforma Alura</span>
+                            </li>
+                            <li>
+                                <strong>Inglês Básico e Intermediário</strong>
+                                <p>Alura - Online</p>
+                                <p>2021 - 2022 (Concluído)</p>
+                                <span class="online-course">Curso realizado online na plataforma Alura</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests-section">
+            <h2 class="section-title">
+                <span class="title-text">Interesses Pessoais</span>
+                <div class="spider-line"></div>
+            </h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Leitura</h3>
+                    <p>Apaixonado por ficção científica e livros sobre tecnologia e inovação. Meus favoritos incluem "O Homem do Castelo Alto" e "A Arte da Guerra Digital".</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Jogos</h3>
+                    <p>Fã de RPGs e jogos de estratégia. Adoro explorar mundos virtuais complexos e mecânicas de jogo inovadoras.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Filmes & Séries</h3>
+                    <p>Cinéfilo assíduo, especialmente de filmes de super-heróis e séries sobre tecnologia. Homem-Aranha é meu favorito!</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Projetos Pessoais</h3>
+                    <p>Desenvolvo projetos pessoais para praticar e aprender novas tecnologias. Sempre buscando aplicar conhecimentos em situações reais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-section">
+            <h2 class="section-title">
+                <span class="title-text">Minha Filosofia</span>
+                <div class="spider-line"></div>
+            </h2>
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <p>
+                        Acredito que a tecnologia deve ser uma ferramenta para empoderar pessoas e resolver problemas reais. Minha abordagem combina criatividade com pragmatismo, buscando sempre o equilíbrio entre inovação e usabilidade. A educação contínua é fundamental em um campo que está sempre em evolução.
+                    </p>
+                    <div class="philosophy-principles">
+                        <div class="principle">
+                            <h4><i class="fas fa-graduation-cap"></i> Educação Contínua</h4>
+                            <p>Investir em aprendizado constante é essencial na tecnologia. Cada curso e certificação são passos no caminho da excelência profissional.</p>
+                        </div>
+                        <div class="principle">
+                            <h4><i class="fas fa-hands-helping"></i> Aplicação Prática</h4>
+                            <p>Valorizo o conhecimento que pode ser aplicado em projetos reais. Teoria e prática devem caminhar juntas para criar soluções eficientes.</p>
+                        </div>
+                        <div class="principle">
+                            <h4><i class="fas fa-globe"></i> Acessibilidade Digital</h4>
+                            <p>Acredito que a tecnologia deve ser inclusiva. Busco criar soluções que sejam acessíveis e úteis para o maior número possível de pessoas.</p>
+                        </div>  
+        </section>
+    </main>
+    <footer class="spider-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="spider-logo">
+                        <div class="spider-icon"></div>
+                        <span class="logo-text">Portfolio Sinval Neto</span>
+                    </div>
+                    <p class="footer-tagline">Com grandes poderes vêm grandes responsabilidades.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Mim</a></li>
+                        <li><a href="certificacoes.html">Certificações</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Conecte-se</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sinval-neto-64b133387/" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/siinvalneto" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/eunetxinhu/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="footer-email">netoart@outlook.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Sinval Neto. Todos os direitos reservados.</p>
+                <p class="spider-quote">"Lembre-se, com grandes poderes vêm grandes responsabilidades." - Tio Ben</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

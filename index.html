@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Sinval Neto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .hero-image .profile-photo-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-image .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        
+        .hero-image .image-placeholder {
+            border: none;
+            padding: 0;
+            height: auto;
+        }
+        
+        .hero-image img[src*="imegens"] {
+            background-color: #f0f0f0;
+        }
+        
+        .dark-mode .hero-image img[src*="imegens"] {
+            background-color: #2a2a2a;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo claro/escuro">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <header class="spider-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <div class="spider-logo">
+                        <div class="spider-icon"></div>
+                        <span class="logo-text">Portfolio Sinval Neto</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="sobre.html"><i class="fas fa-user"></i> Sobre Mim</a></li>
+                    <li><a href="certificacoes.html"><i class="fas fa-certificate"></i> Certificações</a></li>
+                    <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="spider-title">
+                        <span class="spider-highlight">Olá, eu sou</span>
+                        <span class="typewriter">Sinval Neto</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="spider-subtitle">Desenvolvedor Web & Profissional</span>
+                        <span class="animated-line"></span>
+                    </p>
+                    <p class="hero-description">
+                        Sou um desenvolvedor web apaixonado por tecnologia e inovação. Com habilidades em HTML, CSS, JavaScript e frameworks modernos, busco criar soluções digitais eficientes e de alta qualidade. Minha trajetória é marcada pela busca constante por aprendizado e pela aplicação prática de conhecimentos em projetos desafiadores.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="contato.html" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Entre em Contato
+                        </a>
+                        <a href="sobre.html" class="btn btn-secondary">
+                            <i class="fas fa-spider"></i> Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-photo-container">
+                        <img src="/imagens/tuxinhuu.png" alt="ArtWork Sinval Neto" class="profile-photo">
+                    </div>
+                    <div class="spider-web-decoration"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills-section">
+            <h2 class="section-title">
+                <span class="title-text">Habilidades Principais</span>
+                <div class="spider-line"></div>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Desenvolvimento front-end com HTML5, CSS3, JavaScript e React. Criação de interfaces responsivas e otimizadas para diferentes dispositivos e navegadores.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design UI/UX</h3>
+                    <p>Criação de interfaces intuitivas e experiências de usuário eficientes. Conhecimento em design responsivo, wireframing e prototipagem.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Gestão de Projetos</h3>
+                    <p>Planejamento, execução e monitoramento de projetos web. Utilização de metodologias ágeis como Scrum para garantir entregas eficientes.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" data-level="80"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="highlights-section">
+            <h2 class="section-title">
+                <span class="title-text">Destaques Profissionais</span>
+                <div class="spider-line"></div>
+            </h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-number">01</div>
+                    <h3>Desenvolvimento Full-Stack</h3>
+                    <p>Experiência no desenvolvimento de aplicações web completas, desde o front-end até a integração com back-end e bancos de dados.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">02</div>
+                    <h3>Projetos Responsivos</h3>
+                    <p>Criação de websites que funcionam perfeitamente em todos os dispositivos, desde smartphones até desktops com telas grandes.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">03</div>
+                    <h3>Otimização de Performance</h3>
+                    <p>Foco na otimização de carregamento e performance de websites, garantindo experiências rápidas e eficientes para os usuários.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="spider-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="spider-logo">
+                        <div class="spider-icon"></div>
+                        <span class="logo-text">Portfolio Sinval Neto</span>
+                    </div>
+                    <p class="footer-tagline">Com grandes poderes vêm grandes responsabilidades.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Mim</a></li>
+                        <li><a href="certificacoes.html">Certificações</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Conecte-se</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sinval-neto-64b133387/" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/siinvalneto" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/eunetxinhu/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="footer-email">netoart@outlook.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> <span id="user-name">Sinval Neto</span>. Todos os direitos reservados.</p>
+                <p class="spider-quote">"Lembre-se, com grandes poderes vêm grandes responsabilidades." - Tio Ben</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
