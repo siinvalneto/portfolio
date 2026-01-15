@@ -6,9 +6,9 @@
 
 :root {
 
-    --primary-color: #e62429; 
+    --primary-color: #ff0004; 
     --secondary-color: #2a2a2a; 
-    --accent-color: #0066cc; 
+    --accent-color: #0008ff; 
     --background-color: #f5f5f5;
     --surface-color: #ffffff;
     --text-color: #333333;
@@ -108,35 +108,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.spider-icon {
-    width: 40px;
-    height: 40px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    position: relative;
-}
-
-.spider-icon::before, .spider-icon::after {
-    content: '';
-    position: absolute;
-    background-color: var(--surface-color);
-    border-radius: 2px;
-}
-
-.spider-icon::before {
-    width: 20px;
-    height: 4px;
-    top: 18px;
-    left: 10px;
-}
-
-.spider-icon::after {
-    width: 4px;
-    height: 20px;
-    top: 10px;
-    left: 18px;
 }
 
 .logo-text {
@@ -725,8 +696,10 @@ body {
     margin-bottom: 50px;
 }
 
+
 .timeline-date {
     position: absolute;
+    z-index: 5;  
     left: -30px;
     top: 0;
     background-color: var(--primary-color);
@@ -1156,5 +1129,79 @@ body {
     .btn {
         width: 100%;
         justify-content: center;
+    }
+}
+.spider-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.spider-icon:hover {
+    transform: translateY(4px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(230, 36, 41, 0.6);
+}
+.spider-icon:hover::before {
+    animation: spider-drop 0.6s ease-in-out forwards;
+}
+@keyframes spider-drop {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(4px) scale(0.95);
+    }
+    100% {
+        transform: translateY(2px) scale(1);
+    }
+}
+.spider-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spider-icon:hover {
+    transform: translateY(4px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(230, 36, 41, 0.6);
+}
+
+
+.spider-icon::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-color: var(--surface-color);
+    border-radius: 50%;
+    top: 13px;
+    left: 16px;
+}
+
+.spider-icon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+    
+        linear-gradient(160deg, transparent 48%, var(--surface-color) 49%, var(--surface-color) 51%, transparent 52%),
+        linear-gradient(200deg, transparent 48%, var(--surface-color) 49%, var(--surface-color) 51%, transparent 52%),
+        linear-gradient(20deg, transparent 48%, var(--surface-color) 49%, var(--surface-color) 51%, transparent 52%),
+        linear-gradient(-20deg, transparent 48%, var(--surface-color) 49%, var(--surface-color) 51%, transparent 52%);
+}
+
+.spider-icon:hover::before {
+    animation: spider-drop 0.6s ease-in-out forwards;
+}
+
+@keyframes spider-drop {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(4px) scale(0.95);
+    }
+    100% {
+        transform: translateY(2px) scale(1);
     }
 }
